@@ -6,9 +6,12 @@
 </head>
 <body>
 <script>
-var today = new Date().format("yyyy-MM-dd");
+var today = new Date("2008-03-01");
 
-document.write(today);
+today.setYear(today.getFullYear() + 4);
+today.setDate(today.getDate() - 1);
+
+document.write(today.format("yyyy-MM-dd"));
 </script>
 </body>
 </html>
